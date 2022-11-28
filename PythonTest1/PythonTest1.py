@@ -14,7 +14,7 @@ else: spielfeld = [screensize[1], screensize[1], 0, 0]
 if(spielfeld[0]%10 != 0): 
     länge = len(str(spielfeld[0]))
     spielfeld[0] -= int(str(spielfeld[0])[länge-1])
-    spielfeld[1] -= int(str(spielfeld[1])[länge-1])
+    spielfeld[1] -= int(str(spielfeld[1])[länge-1])  #alan
 
 spielfeld[2] = math.floor((screensize[0]-spielfeld[0])/2)
 spielfeld[3] = math.floor((screensize[1]-spielfeld[1])/2)
